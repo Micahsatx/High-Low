@@ -13,9 +13,11 @@ $usersGuess = trim(fgets(STDIN));
 do{    
     if ($usersGuess < $numberUserIsGuessing){
         echo "Wrong, guess HIGHER.\n";
+        `say -v bells wrong wrong wrong wrong please guess higher`;
         $usersGuess = trim(fgets(STDIN));
     } else {
         echo "Wrong, guess LOWER.\n";
+        `say -v bells wrong wrong wrong wrong please guess lower`;l
         $usersGuess = trim(fgets(STDIN));
     }
 // do the top part as long as the below statement is NOT TRUE! 
